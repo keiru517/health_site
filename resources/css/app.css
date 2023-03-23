@@ -1,0 +1,92 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+.sweet-modal-overlay {
+    @apply mt-16;
+}
+.no-scroll {
+    overflow: hidden;
+}
+
+@layer base {
+    body {
+        @apply relative bg-gradient-to-b from-base-300 to-base-100;
+    }
+
+    /* Apply defaults to forms */
+    [type="text"] {
+        @apply input input-bordered border-2;
+    }
+    [type="email"] {
+        @apply input input-bordered border-2;
+    }
+    [type="url"] {
+        @apply input input-bordered border-2;
+    }
+    [type="password"] {
+        @apply input input-bordered border-2;
+    }
+    [type="number"] {
+        @apply input input-bordered border-2;
+    }
+    [type="date"] {
+        @apply input input-bordered border-2;
+    }
+    [type="datetime-local"] {
+        @apply input input-bordered border-2;
+    }
+    [type="month"] {
+        @apply input input-bordered border-2;
+    }
+    [type="search"] {
+        @apply input input-bordered border-2;
+    }
+    [type="tel"] {
+        @apply input input-bordered border-2;
+    }
+    [type="time"] {
+        @apply input input-bordered border-2;
+    }
+    [type="week"] {
+        @apply input input-bordered border-2;
+    }
+    [type="checkbox"] {
+        @apply checkbox;
+    }
+    textarea {
+        @apply textarea textarea-bordered border-2;
+    }
+    select {
+        @apply select select-bordered border-2;
+    }
+    input:focus {
+        @apply focus:ring focus:ring-primary;
+    }
+}
+
+.input-ghost {
+    @apply bg-transparent border-none;
+}
+
+.dp__input {
+    @apply input;
+}
+.dp__disabled {
+    @apply !bg-base-300;
+}
+
+.bg-slightly-transparent-black {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+* {
+    --fc-neutral-bg-color: hsla(var(--n) / var(--tw-bg-opacity, 1));
+    --fc-list-event-dot-width: 10px;
+    --fc-list-event-hover-bg-color: theme("colors.primary.500");
+    --fc-neutral-bg-color: hsla(var(--s) / var(--tw-bg-opacity, 0.5));
+    --fc-page-bg-color: theme("colors.base-200");
+    --fc-list-event-hover-bg-color: theme("colors.primary.500");
+    --fc-event-border-color: theme("colors.neutral.500");
+    --fc-border-color: hsla(var(--bc) / var(--tw-bg-opacity, 0.3));
+}
